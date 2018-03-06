@@ -8,8 +8,8 @@
     else
     {
       echo"Bem vindo, convidado <br>";
-      echo"\r\n Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você.";
-      echo"\r\n Para ler o conteúdo é necessário efetuar o login. \n";
+      echo"<br> Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você.";
+      echo"<br> Para ler o conteúdo é necessário efetuar o login. \n";
       echo"\r\n<br>**** <a href='login.html'> Clique aqui</a> ****";
     }
 ?>
