@@ -6,8 +6,7 @@
     }else{
       echo"Bem-Vindo, convidado <br>";
       echo"Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você";
-      echo " Para ler o conteúdo é necessário efetuar o login";
-      echo "\n"
-      echo"<br><a href='login.html'>Login</a>"
+      echo"Para ler o conteúdo é necessário efetuar o login \n";
+      echo"(<br><a href='login.html'>Login</a>)"
     }
 ?>
