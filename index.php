@@ -3,10 +3,9 @@
   $image='https://blog.openshift.com/wp-content/uploads/Logotype_RH_OpenShiftContainerPlatform_wLogo_CMYK_Black.jpg';
 
 	echo "<h2> Demonstração Openshift na prática!!! <br><br></h2>";
-	echo $_SERVER['SERVER_ADDR'];
-  
 	echo '<img src="'.$image.'" width="400" height="80" /><br>';
-	
+	echo "<br>Servidor:" $_SERVER['SERVER_ADDR'];
+
     if(isset($login_cookie))
     {
       echo"<br>Bem vindo, $login_cookie <br> !!!";
