@@ -4,7 +4,7 @@
 
 	echo "<h2> Demonstração Openshift na prática!!! <br><br></h2>";
 	echo '<img src="'.$image.'" width="400" height="80" /><br>';
-	echo "<br>Servidor:" $_SERVER['SERVER_ADDR'];
+	echo $_SERVER['SERVER_ADDR'];
 
     if(isset($login_cookie))
     {
