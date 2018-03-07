@@ -2,8 +2,8 @@
 
 $login = $_POST['login'];
 $senha = MD5($_POST['senha']);
-$connect = mysqli_connect($servername,$username,$password);
-$db = mysqli_select_db($servername);
+$connect = new mysqli("mysql", "dbuser", "redhat@123", "sampledb");
+$db = mysqli_select_db("mysql");
 $query_select = "SELECT login FROM usuarios WHERE login = '$login'";
 $select = mysqli_query($query_select,$connect);
 $array = mysqli_fetch_array($select);
