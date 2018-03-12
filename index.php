@@ -8,14 +8,17 @@
 
     if(isset($login_cookie))
     {
-      echo"<br>Bem vindo, $login_cookie <br> !!!";
-      echo"\n Essas informações <font color='red'>PODEM</font> ser acessadas por você.";
+      echo"<br>Bem vindo, $login_cookie !!!<br>";
+      echo"<br> <font color='red'>RED HAT "
+	  echo"<br> OPENSHIFT</font>"
+	  echo"<br> <font color='green'>Sea Tecnologia </font>"
+	  echo"<br> Essas informações <font color='red'>PODEM</font> ser acessadas por você.";
     }
     else
     {
       echo"<br> Bem vindo, convidado <br>";
-      echo" Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você.<br>";
-      echo" Para ler o conteúdo é necessário efetuar o login. <br>";
+      echo"<br> Essas informações <font color='red'>NÃO PODEM</font> ser acessadas por você.<br>";
+      echo"<br> Para ler o conteúdo é necessário efetuar o login. <br>";
       echo"<br><h2> <a href='login.html'> Clique aqui</a>";
     }
 
