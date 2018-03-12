@@ -3,9 +3,9 @@
 $login = $_POST['login'];
 $senha = MD5($_POST['senha']);
 $connect = new mysqli("mysql", "dbuser", "redhat@123", "sampledb");
-$db = mysqli_select_db("mysql");
+$db = mysqli_select_db($connect,"sampledb");
 $query_select = "SELECT login FROM usuarios WHERE login = '$login'";
-$select = mysqli_query($query_select,$connect);
+$select = $connect->query($query_select);
 $array = mysqli_fetch_array($select);
 $logarray = $array['login'];
  
@@ -20,7 +20,7 @@ $logarray = $array['login'];
  
       }else{
         $query = "INSERT INTO usuarios (login,senha) VALUES ('$login','$senha')";
-        $insert = mysqli_query($query,$connect);
+        $insert = $connect->query($query);
          
         if($insert){
           echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='login.html'</script>";
