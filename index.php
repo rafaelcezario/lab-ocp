@@ -9,8 +9,8 @@
     if(isset($login_cookie))
     {
       echo"<br>Bem vindo, $login_cookie !!!<br>";
-      echo"<br> <font color='red'>RED HAT "
-	  echo"<br> OPENSHIFT</font>"
+      echo"<br> <font color='red'>RED HAT</font> "
+	  echo"<br><br> <font color='red'> OPENSHIFT</font>"
 	  echo"<br> <font color='green'>Sea Tecnologia </font>"
 	  echo"<br> Essas informações <font color='red'>PODEM</font> ser acessadas por você.";
     }
