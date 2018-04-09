@@ -18,7 +18,6 @@
     else
     {
       echo"<br><br>Bem vindo, convidado !!!<br>";
-      echo "Teste";
       echo"<br> Essas informações <font color='red'> NÃO PODEM </font> ser acessadas por você.<br>";
       echo"<br> Para ler o conteúdo é necessário efetuar o login. <br>";
       echo"<br><h1> <a href='login.html'> Login</a>";
