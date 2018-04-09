@@ -22,5 +22,4 @@
       echo"<br> Para ler o conteúdo é necessário efetuar o login. <br>";
       echo"<br><h1> <a href='login.html'> Login</a>";
     }
-
 ?>
