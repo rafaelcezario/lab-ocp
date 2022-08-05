@@ -1,5 +1,6 @@
 <?php
   $login_cookie = $_COOKIE['login'];
+  # CORRIGIDO O LINK DA IMAGEM
   $image="https://www.dnait.ie/wp-content/uploads/2020/07/Red-Hat-OpenShift-on-IBM-Cloud.jpg";
 	echo "<h2> Demonstração Openshift na prática!!! <br><br></h2>";
 	echo '<img src="'.$image.'" width="600" height="320" /><br>';
