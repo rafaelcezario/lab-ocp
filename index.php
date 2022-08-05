@@ -3,7 +3,7 @@
   $image="https://www.dnait.ie/wp-content/uploads/2020/07/Red-Hat-OpenShift-on-IBM-Cloud.jpg";
 	echo "<h2> Demonstração Openshift na prática!!! <br><br></h2>";
 	echo '<img src="'.$image.'" width="600" height="320" /><br>';
-	echo "CONTAINER IP = " $_SERVER['SERVER_ADDR'];
+	echo "CONTAINER IP = "; echo $_SERVER['SERVER_ADDR'];
 
     if(isset($login_cookie))
     {
