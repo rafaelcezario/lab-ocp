@@ -2,8 +2,9 @@
 
 $login = $_POST['login'];
 $senha = MD5($_POST['senha']);
-$connect = new mysqli("mysql", "dbuser", "redhat@123", "sampledb");
-$db = mysqli_select_db($connect,"sampledb");
+# CRIAR O SECRET DENTRO DO OPENSHIFT PARA GUARDAR USUARIO E SENHA
+$connect = new mysqli("$_ENV['DATABASE']", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
+$db = mysqli_select_db($connect,$_ENV['MYSQL_DATABASE']);
 $query_select = "SELECT login FROM usuarios WHERE login = '$login'";
 $select = $connect->query($query_select);
 $array = mysqli_fetch_array($select);
