@@ -3,7 +3,7 @@
 	$entrar = $_POST["entrar"];
 	$senha = md5($_POST["senha"]);
 	# CRIAR O SECRET NO OPENSHIFT
-	$connect = new mysqli("$_ENV['DATABASE']", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
+	$conn = new mysqli("$_ENV['DATABASE']", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
 	# $conn = new mysqli("$servername", "$username", "$password", "$database");
 
 	if ($conn->connect_error) {
