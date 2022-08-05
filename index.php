@@ -12,7 +12,7 @@
       echo"<br> <font color='red'>RED HAT</font> ";
 	  echo"<br><font color='red'> OPENSHIFT</font>";
 	  echo"<br> <font color='green'>VOCE AUTENTICOU COM SUCESSO NO BANCO DE DADOS!!! </font>";
-	  echo"<br>"
+	  echo"<br>";
 	  echo"<br> Essas informações <font color='red'>PODEM</font> ser acessadas por você.";
 	  echo"<br><br><br> <a href='logout.php'> Logout</a>";
     }
